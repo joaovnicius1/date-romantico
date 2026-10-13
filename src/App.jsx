@@ -409,16 +409,28 @@ useEffect(() => {
     }
 
 
-  function abrirWhatsApp() {
-    if (!WHATSAPP_NUMERO || !/^\d+$/.test(WHATSAPP_NUMERO)) {
-      alert("Confira o número de WhatsApp no início do App.jsx.");
-      return;
-    }
 
-    if (!tipoDate) {
-      alert("Escolha o tipo de date antes de continuar.");
-      return;
-    }
+function abrirWhatsApp() {
+  if (!WHATSAPP_NUMERO || !/^\d+$/.test(WHATSAPP_NUMERO)) {
+    alert("Confira o número de WhatsApp no início do App.jsx.");
+    return;
+  }
+
+  const nome = nomePessoa.trim().replace(/\./g, " ");
+
+  if (!nome) {
+    alert("Informe seu nome antes de continuar.");
+    return;
+  }
+
+  const mensagem =
+    `Oi! Sou ${nome}. Aceitei o convite do João e quero receber minha mensagem do futuro! 🔮 DATE_FUTURO_V1`;
+
+  const url =
+    `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensagem)}`;
+
+  window.open(url, "_blank", "noopener,noreferrer");
+}
 
     const mensagem =
       `Oiii, João 👀💗\n\n` +
@@ -532,6 +544,7 @@ useEffect(() => {
               const som = new Audio(`${import.meta.env.BASE_URL}sons/acabou.mp3`);
                 som.volume = 0.8;
                 som.play().catch(() => {});
+              abrirWhatsApp();
               setEtapa(4);
             }}
           >
