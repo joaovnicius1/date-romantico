@@ -63,7 +63,7 @@ const mensagensNao = [
 const tiposDeDate = [
   {
     nome: "Terapia",
-    som: "/public/sons/ta-bom-quanto-sentimento.mp3",
+    som: `${import.meta.env.BASE_URL}sons/ta-bom-quanto-sentimento.mp3`,
     emoji: "🛋️",
     descricao: "Vamos descobrir se o problema é a sociedade ou nós dois.",
     historia:
@@ -71,7 +71,7 @@ const tiposDeDate = [
   },
   {
     nome: "Corridinha no Piscinão",
-    som: "/public/sons/eu-ja-nao-aguento-mais.mp3",
+    som: `${import.meta.env.BASE_URL}sons/eu-ja-nao-aguento-mais.mp3`,
     emoji: "🏃",
     descricao: "Cardio, suor e decisões questionáveis.",
     historia:
@@ -79,7 +79,7 @@ const tiposDeDate = [
   },
   {
     nome: "Laboratório 96",
-    som: "/public/sons/que-delicia-ele-e-dos-nossos.mp3",
+    som: `${import.meta.env.BASE_URL}sons/que-delicia-ele-e-dos-nossos.mp3`,
     emoji: "🧪",
     descricao: "Um experimento social chamado nós dois.",
     historia:
@@ -87,7 +87,7 @@ const tiposDeDate = [
   },
   {
     nome: "Magnolia",
-    som: "/public/sons/crank-that-soulja.mp3",
+    som: `${import.meta.env.BASE_URL}sons/cheiro-bom-de-pica.mp3`,
     emoji: "🌸",
     descricao: "Luxo, glamour e saldo bancário confidencial.",
     historia:
@@ -95,7 +95,7 @@ const tiposDeDate = [
   },
   {
     nome: "Brejo Bar",
-    som: "/public/sons/lesbicasgaysbozo.mp3",
+    som: `${import.meta.env.BASE_URL}sons/lesbicasgaysbozo.mp3`,
     emoji: "🐸",
     descricao: "Um encontro digno de um príncipe anfíbio.",
     historia:
@@ -103,7 +103,7 @@ const tiposDeDate = [
   },
   {
     nome: "Comuna Bar",
-    som: "/public/sons/ussr.mp3",
+    som: `${import.meta.env.BASE_URL}sons/ussr.mp3`,
     emoji: "🚩",
     descricao: "Amor, geopolítica e uma bandeira vermelha ou outra.",
     historia:
@@ -111,7 +111,7 @@ const tiposDeDate = [
   },
   {
     nome: "Jorge's Hamburgueria",
-    som: "/public/sons/torresmo_pt1.mp3",
+    som: `${import.meta.env.BASE_URL}sons/torresmo_pt1.mp3`,
     emoji: "🍔",
     descricao: "Uma mordida no hambúrguer e outra no coração.",
     historia:
@@ -119,7 +119,7 @@ const tiposDeDate = [
   },
     {
       nome: "Chiquinho",
-      som: "/public/sons/toma-milk-shake-de-morango_7NJhrnd.mp3",
+      som: `${import.meta.env.BASE_URL}sons/toma-milk-shake-de-morango_7NJhrnd.mp3`,
       emoji: "🍦",
       descricao: "Tomando sorvete e derretendo mais que a casquinha.",
       historia:
@@ -127,15 +127,15 @@ const tiposDeDate = [
     },
   {
     nome: "Bar da Mata",
-    som: "/public/sons/descansarnequeocaranaoedeferro.mp3",
+    som: `${import.meta.env.BASE_URL}sons/descansarnequeocaranaoedeferro.mp3`,
     emoji: "🌳",
     descricao: "Criando raízes enquanto os mosquitos fazem a festa.",
     historia:
       "A natureza estava linda, o clima estava perfeito e os mosquitos decidiram participar ativamente do nosso romance. Tentamos manter a pose de casal de comercial de perfume, mas passamos boa parte do tempo espantando insetos. Ainda assim, entre uma reclamação e outra, descobrimos que até no meio do mato a companhia certa consegue transformar qualquer caos em uma boa história.",
   },
   {
-    nome: "No dentista",
-    som: "/public/sons/lula-cara-sem-dente.mp3",
+    nome: "Dentista",
+    som: `${import.meta.env.BASE_URL}sons/lula-cara-sem-dente.mp3`,
     emoji: "🦷",
     descricao: "tamo aqui pra isso, se precisar",
     historia:
@@ -143,7 +143,7 @@ const tiposDeDate = [
   },
   {
     nome: "Parque das Barrigudas",
-    som: "/public/sons/defante-parada-full.mp3",
+    som: `${import.meta.env.BASE_URL}sons/vc-sabe-aonde-fica-a-rua-tchunosbangos-tchunosbagos-1.mp3`,
     emoji: "🤰",
     descricao: "Turismo, mistério e a lendária grávida de Taubaté.",
     historia:
@@ -151,7 +151,7 @@ const tiposDeDate = [
   },
   {
     nome: "Pôr do Sol",
-    som: "/public/sons/e-ta-bom.mp3",
+    som: `${import.meta.env.BASE_URL}sons/e-ta-bom.mp3`,
     emoji: "🌅",
     descricao: "Um pouquinho de romance no meio desse surto coletivo lá no mirante.",
     historia:
@@ -159,15 +159,14 @@ const tiposDeDate = [
   },
   {
     nome: "Fazer um corre",
-    som: "/public/sons/vamos-usar-droga-desgraca.mp3",
+    som: `${import.meta.env.BASE_URL}sons/vamos-usar-droga-desgraca.mp3`,
     emoji: "🍁",
     descricao: "Uma missão misteriosa com destino ao lanche.",
     historia:
-      "Saímos para cumprir uma missão confidencial, cujo único objetivo oficialmente declarado era garantir dinheiro para comer depois. Houve planejamento, reuniões que poderiam ter sido mensagens e uma quantidade preocupante de improviso. No final, a missão foi considerada um sucesso: sobrevivemos, conseguimos nosso lanche e decidimos que a próxima operação seria simplesmente marcar outro date.",
-  },
+"Era para ser apenas um rolê para ir f1. Um plano simples, sem grandes expectativas — pelo menos era isso que alguém tentava convencer a própria cabeça.Saímos para cumprir nossa pequena missão, sem imaginar que, entre uma conversa aleatória e outra, a companhia acabaria sendo tão boa quanto o próprio rolê. Houve risadas, assuntos que surgiram do absoluto nada e aquela sensação gostosa de estar com alguém com quem até os momentos mais comuns ficam interessantes. No fim, a missão foi um sucesso: aproveitamos o momento e ainda ganhamos uma desculpa perfeita para marcar outro date. E foi assim que terminou o primeiro capítulo: com um sorriso bobo, uma lembrança boa e uma pergunta que ficou no ar... E se a gente escrevesse o capítulo 2 pessoalmente? 🍃👀"  },
     {
   nome: "Livrar o Brasil das Garras do CAPETAlismo",
-  som: "/public/sons/nos-o-povo-sovietico.mp3",
+  som: `${import.meta.env.BASE_URL}sons/nos-o-povo-sovietico.mp3`,
   emoji: "☭",
   descricao: "My name is Marx, Karl Marx",
   historia:
@@ -175,23 +174,23 @@ const tiposDeDate = [
 },
 {
   nome: "Academia",
-  som: "/public/sons/hora-do-show-porra.mp3",
+  som: `${import.meta.env.BASE_URL}sons/hora-do-show-porra.mp3`,
   emoji: "🏋️",
   descricao: "Endorfina, competição desnecessária e flerte entre séries.",
   historia:
     "A ideia era treinar juntos e incentivar um ao outro. Na prática, um ficou responsável por contar as repetições e o outro por julgar a execução. Teve competição de quem aguentava mais na esteira, uma discussão séria sobre whey protein e pelo menos três olhares no espelho fingindo conferir a postura. No final, ninguém sabia se estava apaixonado ou só com o músculo dolorido. Fomos embora tomar açaí porque o shape não se constrói sozinho, mas a felicidade também não."
 },
 {
-  nome: "Mercado",
-  som: "/public/sons/lesbicasgaysbozo.mp3",
-  emoji: "🛒",
-  descricao: "Um teste de compatibilidade disfarçado de lista de compras.",
+  nome: "Hospital",
+  som: `${import.meta.env.BASE_URL}sons/defante-parada-full.mp3`,
+  emoji: "🏥",
+  descricao: "Na saúde e na doença, ou pelo menos até a recepção chamar a senha.",
   historia:
-    "Tudo começou com uma lista organizada e a promessa de não gastar com besteira. Dez minutos depois, o carrinho já tinha chocolate, salgadinho, uma bebida que ninguém conhecia e um produto em promoção que nem estava na lista. Descobrimos divergências irreconciliáveis sobre a marca do café, negociamos o preço emocional de um sorvete e percebemos que morar junto talvez seja basicamente discutir qual detergente rende mais. Pelo menos agora sabemos quem vai esconder o último pedaço de chocolate."
+    "Nosso romance chegou a um nível tão intenso que o próximo encontro foi no hospital. Entre a recepção, a triagem e a pergunta 'o que você está sentindo?', descobrimos que acompanhar alguém na consulta é praticamente um teste de compatibilidade. Teve cadeira desconfortável, demora, preocupação e aquela troca de olhares de quem já está pensando em fugir dali para comer alguma coisa. No fim, saímos sem saber se o coração acelerado era amor ou ansiedade com o atendimento, mas uma coisa ficou clara: se a gente sobreviveu à espera do SUS junto, talvez consiga sobreviver a qualquer DR. 💗🩺"
 },
 {
   nome: "Sushi",
-  som: "/public/sons/untitled_zd2ts4l-audiotrimmer.mp3",
+  som: `${import.meta.env.BASE_URL}sons/untitled_zd2ts4l-audiotrimmer.mp3`,
   emoji: "🍣",
   descricao: "Peixe cru, olhares suspeitos e a conta chegando como plot twist.",
   historia:
@@ -199,7 +198,7 @@ const tiposDeDate = [
 },
 {
   nome: "Coisas de adulto🔞",
-  som: "/public/sons/mas-voce-e-safado-ne.mp3",
+  som: `${import.meta.env.BASE_URL}sons/mas-voce-e-safado-ne.mp3`,
   emoji: "😈",
   descricao: "18+: boletos, responsabilidades e intimidades que não aparecem nos filmes.",
   historia:
@@ -208,7 +207,7 @@ const tiposDeDate = [
 
 {
   nome: "Na Minha Casa",
-  som: "/public/sons/aqui-e-pra-dormir-e-a-tua-casa-aqui.mp3",
+  som: `${import.meta.env.BASE_URL}sons/aqui-e-pra-dormir-e-a-tua-casa-aqui.mp3`,
   emoji: "🏠",
   descricao: "O conforto do lar e a suspeita de que o date vai durar mais que o previsto.",
   historia:
@@ -216,7 +215,7 @@ const tiposDeDate = [
 },
 {
   nome: "Na Sua Casa",
-  som: "/public/sons/mas-voce-e-safado-ne.mp3",
+  som: `${import.meta.env.BASE_URL}sons/tira-tira-caraio-everson-zoio-meme.mp3`,
   emoji: "🗝️",
   descricao: "Visita com hora pra chegar e nenhuma previsão confiável pra ir embora.",
   historia:
@@ -301,17 +300,15 @@ function App() {
   }
 
     const audiosNao = [
-      "/sons/faahhhhhh.mp3",
-      "/sons/faah-reverb.mp3",
-      "/sons/vine-boom.mp3",
-      "/sons/seu_arrombadinho_.mp3",
-      "/sons/nao-sobrou-nada_fZprXSC.mp3",
-      "/sons/voce-nao-tem-aura.mp3",
-      "/sons/pense-no-lula.mp3",
-      "/sons/cade-o-ze-gotinha_PIOjgTPi.mp3",
-      "/sons/cat-laugh-meme-1.mp3",
-      "/sons/lula-free-fire.mp3",
-
+      `${import.meta.env.BASE_URL}sons/faahhhhhh.mp3`,
+      `${import.meta.env.BASE_URL}sons/faah-reverb.mp3`,
+      `${import.meta.env.BASE_URL}sons/vine-boom.mp3`,
+      `${import.meta.env.BASE_URL}sons/seu_arrombadinho_.mp3`,
+      `${import.meta.env.BASE_URL}sons/nao-sobrou-nada_fZprXSC.mp3`,
+      `${import.meta.env.BASE_URL}sons/voce-nao-tem-aura.mp3`,
+      `${import.meta.env.BASE_URL}sons/crank-that-soulja.mp3`,
+      `${import.meta.env.BASE_URL}sons/untitled-2_2.mp3`,
+      `${import.meta.env.BASE_URL}sons/cat-laugh-meme-1.mp3`
     ];
 
     const audioEscolhido =
@@ -448,22 +445,29 @@ useEffect(() => {
   return (
     <main className="pagina">
       
-    <div className="fundo-coracoes" aria-hidden="true">
-      {Array.from({ length: 200 }, (_, i) => (
-        <span
-          key={i}
-          className="foto-flutuante"
-          style={{
-            "--posicao": `${(i * 47 + 12) % 100}%`,
-            "--atraso": `${(i % 20) * -1.8}s`,
-            "--duracao": `${15 + (i % 5) * 2}s`,
-            "--rotacao": `${(i % 2 === 0 ? -1 : 1) * (8 + (i % 4) * 4)}deg`,
-          }}
-        >
-        </span>
-        
-      ))}
-    </div>
+       <div className="fundo-coracoes" aria-hidden="true">
+  {Array.from({ length: 150 }, (_, i) => {
+    const coracoes = ["❤️", "🧡", "💛", "💚", "💙", "💜", "🩷", "🩵", "🤍", "🤎"];
+    return (
+      <span
+        key={i}
+        className="foto-flutuante"
+        style={{
+          "--posicao": `${(i * 47 + 12) % 100}%`,
+          "--atraso": `${(i % 20) * -1.8}s`,
+          "--duracao": `${10 + (i % 8) * 2}s`,
+          "--rotacao": `${(i % 2 === 0 ? -1 : 1) * (8 + (i % 4) * 4)}deg`,
+          left: `${(i * 47 + 12) % 100}%`,
+          animationDelay: `${(i % 20) * -1.8}s`,
+          animationDuration: `${10 + (i % 8) * 2}s`,
+          fontSize: `${16 + (i % 5) * 6}px`,
+        }}
+      >
+        {coracoes[i % coracoes.length]}
+      </span>
+    );
+  })}
+</div>
 
       {/* ETAPA 1 — CARTINHA INICIAL */}
       {etapa === 1 && (
@@ -525,7 +529,7 @@ useEffect(() => {
           <button
             className="botao botao-sim"
             onClick={() =>{
-              const som = new Audio("/public/sons/acabou.mp3");
+              const som = new Audio(`${import.meta.env.BASE_URL}sons/acabou.mp3`);
                 som.volume = 0.8;
                 som.play().catch(() => {});
               setEtapa(4);
@@ -571,7 +575,7 @@ useEffect(() => {
         <button
           className="botao"
           onClick={() => {
-            const som = new Audio("/public/sons/good-luck.mp3");
+            const som = new Audio(`${import.meta.env.BASE_URL}sons/good-luck.mp3`);
             som.volume = 0.8;
             som.play().catch(() => {});
 
@@ -655,18 +659,18 @@ useEffect(() => {
 
           <p>
             Eu sei que sou um partidão demais pra você.
-            Deve dar uma insegurança andar com um homem tão bonito assim. 😂
+            Deve dar uma insegurança andar com um homem tão bonito assim.
           </p>
           
             <div className="video-desistencia">
               <video controls playsInline preload="metadata">
-                <source src="/public/imagens/5.mp4" type="video/mp4" />
+                <source src={`${import.meta.env.BASE_URL}imagens/5.mp4`} type="video/mp4" />
                 Seu navegador não suporta vídeos.
               </video>
             </div>
           <p>
             Um total de zero mulheres doidas pra ficar comigo...
-            quer dizer, você que perdeu! KKKKKKK 💀
+            VC NÃO SABE O QUE TÁ PERDENDO 💀
           </p>
 
           <button
@@ -678,7 +682,7 @@ useEffect(() => {
               setTentativasNao(0);
             }}
           >
-            TÁ BOM, VOU TE DAR OUTRA CHANCE 😂
+            TÁ BOM, VOU TE DAR UMA CHANCE
           </button>
         </section>
       )}
@@ -713,7 +717,7 @@ useEffect(() => {
           </div>
           <img
             className="imagem-meme-cartinha"
-            src="/public/imagens/img1.jpeg"
+            src={`${import.meta.env.BASE_URL}imagens/img1.jpeg`}
             alt="Meme romântico"
             loading="lazy"
           />
@@ -762,7 +766,7 @@ useEffect(() => {
                 <article className="video-card">
                   <video controls playsInline preload="metadata">
                     <source
-                      src="/public/imagens/WhatsApp Video 2026-10-12 at 18.39.05.mp4"
+                      src={`${import.meta.env.BASE_URL}imagens/WhatsApp Video 2026-10-12 at 18.39.05.mp4`}
                       type="video/mp4"
                     />
                     Seu navegador não suporta vídeos.
@@ -775,7 +779,7 @@ useEffect(() => {
                 <article className="video-card">
                   <video controls playsInline preload="metadata">
                     <source
-                      src="/public/imagens/WhatsApp Video 8.mp4"
+                      src={`${import.meta.env.BASE_URL}imagens/WhatsApp Video 8.mp4`}
                       type="video/mp4"
                     />
                     Seu navegador não suporta vídeos.
@@ -788,7 +792,7 @@ useEffect(() => {
                 <article className="video-card">
                   <video controls playsInline preload="metadata">
                     <source
-                      src="/public/imagens/WhatsApp Video 2.mp4"
+                      src={`${import.meta.env.BASE_URL}imagens/WhatsApp Video 2.mp4`}
                       type="video/mp4"
                     />
                     Seu navegador não suporta vídeos.
@@ -801,7 +805,7 @@ useEffect(() => {
                 <article className="video-card">
                   <video controls playsInline preload="metadata">
                     <source
-                      src="/public/imagens/WhatsApp Video 3.mp4"
+                      src={`${import.meta.env.BASE_URL}imagens/WhatsApp Video 3.mp4`}
                       type="video/mp4"
                     />
                     Seu navegador não suporta vídeos.

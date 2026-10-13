@@ -1160,3 +1160,15 @@ button:focus-visible {
   object-fit: contain;
 }
 
+.foto-flutuante {
+  position: absolute;
+  bottom: -50px;
+  background-image: none;
+  width: auto;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  animation-name: subirCoracao;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
