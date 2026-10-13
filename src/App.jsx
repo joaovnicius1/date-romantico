@@ -410,21 +410,20 @@ useEffect(() => {
 
 
 
+
 function abrirWhatsApp() {
   if (!WHATSAPP_NUMERO || !/^\d+$/.test(WHATSAPP_NUMERO)) {
     alert("Confira o número de WhatsApp no início do App.jsx.");
     return;
   }
 
-  const nome = nomePessoa.trim().replace(/\./g, " ");
-
-  if (!nome) {
-    alert("Informe seu nome antes de continuar.");
-    return;
-  }
-
   const mensagem =
-    `Oi! Sou ${nome}. Aceitei o convite do João e quero receber minha mensagem do futuro! 🔮 S2`;
+    `Oiii, João 👀💗\n\n` +
+    `Nossa, já tem um tempinho que eu tô de olho em você, sabia? KKKKK 🤭 ` +
+    `Te acho bonitinho e confesso que fiquei com vontade de te conhecer melhor...\n\n` +
+    `Aí pensei: por que não tomar coragem e te chamar pra sair, né? 🥹❤️\n\n` +
+    `O que você acha da gente ir ao ${tipoDate} ${dateEscolhido?.emoji ?? ""} comigo? ` +
+    `Queria tanto te verrr KKKKK 💗👉👈\n\nS2`;
 
   const url =
     `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensagem)}`;
@@ -432,21 +431,6 @@ function abrirWhatsApp() {
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
-    const mensagem =
-      `Oiii, João 👀💗\n\n` +
-      `Nossa, já tem um tempinho que eu tô de olho em você, sabia? KKKKK 🤭 ` +
-      `Te acho bonitinho e confesso que fiquei com vontade de te conhecer melhor...\n\n` +
-      `Aí pensei: por que não tomar coragem e te chamar pra sair, né? 🥹❤️\n\n` +
-      `O que você acha da gente ir ao ${tipoDate} ${dateEscolhido?.emoji ?? ""} comigo? ` +
-      `Queria tanto te verrr KKKKK 💗👉👈\n\nS2`;
-
-
-
-    const url =
-      `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensagem)}`;
-
-    window.open(url, "_blank", "noopener,noreferrer");
-  }
 
   const confetes = Array.from({ length: 60 }, (_, i) => ({
     id: i,
