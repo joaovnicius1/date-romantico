@@ -438,7 +438,7 @@ function abrirWhatsApp() {
       `Te acho bonitinho e confesso que fiquei com vontade de te conhecer melhor...\n\n` +
       `Aí pensei: por que não tomar coragem e te chamar pra sair, né? 🥹❤️\n\n` +
       `O que você acha da gente ir ao ${tipoDate} ${dateEscolhido?.emoji ?? ""} comigo? ` +
-      ``Queria tanto te verrr KKKKK 💗👉👈\n\S2`;`;
+      ``Queria tanto te verrr KKKKK 💗👉👈\n\ S2`;`;
 
     const url =
       `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensagem)}`;
