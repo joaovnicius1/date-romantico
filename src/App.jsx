@@ -541,6 +541,10 @@ function abrirWhatsApp() {
           <button
             className="botao botao-sim"
             onClick={() =>{
+                if (audioAtual.current) {
+                    audioAtual.current.pause();
+                    audioAtual.current.currentTime = 0;
+                  }
               const som = new Audio(`${import.meta.env.BASE_URL}sons/acabou.mp3`);
                 som.volume = 0.8;
                 som.play().catch(() => {});
@@ -587,6 +591,11 @@ function abrirWhatsApp() {
         <button
           className="botao"
           onClick={() => {
+
+              if (audioAtual.current) {
+                  audioAtual.current.pause();
+                  audioAtual.current.currentTime = 0;
+                }
             const som = new Audio(`${import.meta.env.BASE_URL}sons/good-luck.mp3`);
             som.volume = 0.8;
             som.play().catch(() => {});
