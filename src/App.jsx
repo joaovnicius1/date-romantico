@@ -56,6 +56,22 @@ const mensagensNao = [
 
 const tiposDeDate = [
   {
+    nome: "Crise Existencial",
+    som: `${import.meta.env.BASE_URL}sons/calabreso.mp3`,
+    emoji: "🌀",
+    descricao: "Uma reflexão profunda sobre a existência, a matéria e o calabreso.",
+    historia:
+      "Calma Calabreso, calma vontade de beber cianeto, calma vazio que assombra meu peito e desola meus sonhos. Às vezes me pergunto o que é real nesse mundo da matéria, porque existo aqui e a complexidade do entendimento de tal. Calma vaziozeto, calma guinozeto, calma reencarnação de minha alma na matéria, junto com o esquecimento de quem fui. Calma, vontade de inalar de oxizeto de carboneto. Eu só falei para ele, calma, demiurgo da silvazeto, não quero mais sofrer aqui. Me ajude a fugir da matéria calabreso. Talvez um dia me recorde de quem já fui e me desprenda do ciclo eterno da reencarnação, enquanto isso continuo preso entre uma vida e outra, tentando aprender o que eu não sei e perdendo a memória toda vez ao recomeçar. Calma, eu disse calma, e assim de novo eu caí em sua armadilha, calabreu. Calabreu, calabreu, calabreu, calabreu, calabreu...",
+  },
+  {
+    nome: "Café",
+    som: `${import.meta.env.BASE_URL}sons/café.mp3`,
+    emoji: "☕",
+    descricao: "Sem café, até a criação do universo vira um projeto de vingança.",
+    historia:
+      "Mãe, tem café? Tem não! Pois vou criar um universo repleto de dor e sofrimento. Este mundo que estou prestes a criar será um espelho distorcido de tudo que já vivi, de cada cicatriz que carrego na alma. Vou dar vida a um universo onde a felicidade não passa de uma lembrança distante, uma sombra fugaz que nunca se materializa.",
+  },
+  {
     nome: "Terapia",
     som: `${import.meta.env.BASE_URL}sons/ta-bom-quanto-sentimento.mp3`,
     emoji: "🛋️",
@@ -306,6 +322,7 @@ function App() {
       `${import.meta.env.BASE_URL}sons/no-god-please-no-noooooooooo.mp3`,
       `${import.meta.env.BASE_URL}sons/tf_nemesis.mp3`,
       `${import.meta.env.BASE_URL}sons/rock-leee.mp3`,
+      `${import.meta.env.BASE_URL}sons/pobre.mp3`,
     ];
 
     const audioEscolhido =
