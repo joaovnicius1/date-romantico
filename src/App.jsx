@@ -32,18 +32,12 @@ const mensagensNao = [
   "Pensa no look que você vai usar 💅",
   "Para de ser ruim, muié 😭",
   "Eu hein! Tô valendo nada mesmo?! 🤡",
-  "AMIGA, COLABORA COM O ROTEIRO 😂",
-  "O universo está mandando sinais 🌌",
-  "PARAAAAAA!!!!!",
+  "AMIGA, COLABORA COM O ROTEIRO",
   "EU PAGO A FATURA DO SEU CARTÃO DE CRÉDITO 💳",
-  "Minha autoestima está em suas mãos 🥲",
-  "O cupido pede uma segunda opinião 🏹",
   "Esse botão está em modo de fuga 🏃",
   "Não me faça instalar o Tinder de novo, purvafor 💀",
-  "Como explico isso pra minha imaginação? 💔",
-  "A opção NÃO está tentando fugir 📵",
   "Atualize a página e tente se apaixonar 🔄",
-  "Quantos nãos você quer? 😂",
+  "Quantos nãos você quer?",
   "O máximo que ela pode dizer é não... 😭",
   "Now you're just somebody that I used to know 🎶",
   "Você atingiu seu limite diário de nãos 📉",
@@ -54,7 +48,7 @@ const mensagensNao = [
   "me desculpa por isso, mas eu te avisei",
   "CLIQUE AQUI SE VC APOIA FLÁVIO BOLSONARO 22",
   "VOCÊ CLICOUU?? OMG! EU ESTAVA MUITO ENGANADO COM VC",
-  "EU TE AMO, MAS VC É UM MONSTRO",
+  "EU TE AMO, MAS VC É UM MONSTRA!!!",
   "ACHO Q NÃO TEM MAIS JEITO, NÃO PODEMOS FICAR JUNTOS",
   "A UNICA COISA Q EU PRECISO, É Q VC DIGA..."
 ];
@@ -118,7 +112,7 @@ const tiposDeDate = [
       "Pedimos hambúrgueres e juramos que dividiríamos as batatas de maneira justa. Foi a primeira grande crise diplomática do relacionamento. Depois de negociações intensas, algumas batatas desapareceram misteriosamente e a paz foi restaurada com uma mordida roubada do lanche alheio. O amor venceu, mas a divisão de acompanhamentos precisará ser regulamentada.",
   },
     {
-      nome: "Chiquinho",
+      nome: "Chiquinho Sorvetes",
       som: `${import.meta.env.BASE_URL}sons/toma-milk-shake-de-morango_7NJhrnd.mp3`,
       emoji: "🍦",
       descricao: "Tomando sorvete e derretendo mais que a casquinha.",
@@ -197,10 +191,10 @@ const tiposDeDate = [
     "O date começou sofisticado: restaurante japonês, conversa interessante e a promessa de comer com elegância. A elegância acabou no primeiro rodízio. Um começou a pedir as peças favoritas como se estivesse se preparando para o inverno, enquanto o outro fingia não reparar na quantidade de salmão consumida. Entre um hot roll e outro, rolou aquela troca de olhares que dizia mais do que qualquer declaração romântica. O verdadeiro teste de amor foi descobrir se dividiríamos a última peça ou iniciaríamos uma guerra diplomática."
 },
 {
-  nome: "Coisas de adulto🔞",
-  som: `${import.meta.env.BASE_URL}sons/mas-voce-e-safado-ne.mp3`,
+  nome: "Conversas de adulto🔞",
+  som: `${import.meta.env.BASE_URL}sons/skylab-fatos.mp3`,
   emoji: "😈",
-  descricao: "18+: boletos, responsabilidades e intimidades que não aparecem nos filmes.",
+  descricao: "18+: boletos, responsabilidades.",
   historia:
     "Chegou a fase em que o maior ato de sedução é perguntar se a pessoa já pagou a conta de luz. O roteiro inclui resolver pendências, fazer orçamento do mês, discutir quem vai lavar a louça e pesquisar por que tudo está tão caro. No meio da burocracia, bateu aquela vontade de abandonar tudo e pedir comida. Mas aí veio o momento mais íntimo de todos: sentar lado a lado, abrir o aplicativo do banco e encarar a realidade sem chorar. No fim, entendemos que crescer é basicamente ter saudade de quando o único problema era escolher o desenho da tarde. E que dividir a vida com alguém é dividir até o PIX do mercado."
 },
@@ -215,7 +209,7 @@ const tiposDeDate = [
 },
 {
   nome: "Na Sua Casa",
-  som: `${import.meta.env.BASE_URL}sons/tira-tira-caraio-everson-zoio-meme.mp3`,
+  som: `${import.meta.env.BASE_URL}sons/Insta_Saver_audio_Original_audio.mp3`,
   emoji: "🗝️",
   descricao: "Visita com hora pra chegar e nenhuma previsão confiável pra ir embora.",
   historia:
@@ -305,10 +299,13 @@ function App() {
       `${import.meta.env.BASE_URL}sons/vine-boom.mp3`,
       `${import.meta.env.BASE_URL}sons/seu_arrombadinho_.mp3`,
       `${import.meta.env.BASE_URL}sons/nao-sobrou-nada_fZprXSC.mp3`,
-      `${import.meta.env.BASE_URL}sons/voce-nao-tem-aura.mp3`,
       `${import.meta.env.BASE_URL}sons/crank-that-soulja.mp3`,
       `${import.meta.env.BASE_URL}sons/untitled-2_2.mp3`,
-      `${import.meta.env.BASE_URL}sons/cat-laugh-meme-1.mp3`
+      `${import.meta.env.BASE_URL}sons/cat-laugh-meme-1.mp3`,
+      `${import.meta.env.BASE_URL}sons/e-agora-vai-entra-o-grosso.mp3`,
+      `${import.meta.env.BASE_URL}sons/no-god-please-no-noooooooooo.mp3`,
+      `${import.meta.env.BASE_URL}sons/tf_nemesis.mp3`,
+      `${import.meta.env.BASE_URL}sons/rock-leee.mp3`,
     ];
 
     const audioEscolhido =
@@ -423,7 +420,7 @@ function abrirWhatsApp() {
     `Te acho bonitinho e confesso que fiquei com vontade de te conhecer melhor...\n\n` +
     `Aí pensei: por que não tomar coragem e te chamar pra sair, né? 🥹❤️\n\n` +
     `O que você acha da gente ir ao ${tipoDate} ${dateEscolhido?.emoji ?? ""} comigo? ` +
-    `Queria tanto te verrr KKKKK 💗👉👈\n\nS2`;
+    `Queria tanto te verrr KKKKK 💗👉👈\n\n`;
 
   const url =
     `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensagem)}`;
@@ -521,7 +518,7 @@ function abrirWhatsApp() {
           <p className="etiqueta">TENHO UMA PERGUNTA</p>
           <h2>Bora sair comigo, {nomePessoa}?</h2>
           <p>
-            Prometo que vai ser melhor do que ficar no celular. 👀
+            Prometo que vai ser melhor do que ficar em casa. 👀
           </p>
 
           <button
@@ -530,7 +527,6 @@ function abrirWhatsApp() {
               const som = new Audio(`${import.meta.env.BASE_URL}sons/acabou.mp3`);
                 som.volume = 0.8;
                 som.play().catch(() => {});
-              abrirWhatsApp();
               setEtapa(4);
             }}
           >
@@ -657,8 +653,7 @@ function abrirWhatsApp() {
           <h2>Ok, entendi que você não me quer. 😔</h2>
 
           <p>
-            Eu sei que sou um partidão demais pra você.
-            Deve dar uma insegurança andar com um homem tão bonito assim.
+            Eu sei que dizer não pra mim não deve ser fácil. Você fica aí tentando se convencer de que está tomando a decisão certa, mas, no fundo, sabe que tá recusando uma oportunidade rara. Mas tudo bem, cada um tem o direito de fazer escolhas ruins, eu acho kkkk.
           </p>
           
             <div className="video-desistencia">
