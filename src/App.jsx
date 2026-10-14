@@ -857,12 +857,20 @@ function abrirWhatsApp() {
                 key={date.nome}
                 className="opcao-date"
                 onClick={() => {
-                  const som = new Audio(date.som);
-                  som.volume = 0.8;
-                  som.play().catch(() => {});
-                  setTipoDate(date.nome);
-                  setEtapa(9);
-                }}
+              if (audioAtual.current) {
+                audioAtual.current.pause();
+                audioAtual.current.currentTime = 0;
+              }
+
+              const som = new Audio(date.som);
+              som.volume = 0.8;
+
+              audioAtual.current = som;
+              som.play().catch(() => {});
+
+              setTipoDate(date.nome);
+              setEtapa(9);
+            }}
               >
                 <span className="emoji-date">{date.emoji}</span>
                 <span className="nome-date">{date.nome}</span>
@@ -924,7 +932,15 @@ function abrirWhatsApp() {
 
           <button
             className="botao botao-secundario"
-            onClick={() => setEtapa(7)}
+            onClick={() => {
+            if (audioAtual.current) {
+              audioAtual.current.pause();
+              audioAtual.current.currentTime = 0;
+              audioAtual.current = null;
+            }
+
+            setEtapa(7);
+          }}
           >
             ESCOLHER OUTRO DATE
           </button>
