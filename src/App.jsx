@@ -921,9 +921,15 @@ function abrirWhatsApp() {
                 audioAtual.current.currentTime = 0;
               }
 
-              const som = new Audio(date.som);
-              som.volume = 0.8;
+              const sons = Array.isArray(date.som)
+              ? date.som
+              : [date.som];
 
+            const somEscolhido =
+              sons[Math.floor(Math.random() * sons.length)];
+
+            const som = new Audio(somEscolhido);
+            som.volume = 0.8;
               audioAtual.current = som;
               som.play().catch(() => {});
 
