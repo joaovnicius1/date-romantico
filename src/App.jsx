@@ -72,8 +72,19 @@ const tiposDeDate = [
       "Mãe, tem café? Tem não! Pois vou criar um universo repleto de dor e sofrimento. Este mundo que estou prestes a criar será um espelho distorcido de tudo que já vivi, de cada cicatriz que carrego na alma. Vou dar vida a um universo onde a felicidade não passa de uma lembrança distante, uma sombra fugaz que nunca se materializa.",
   },
   {
+  nome: "Degustação de Vinhos",
+  som: `${import.meta.env.BASE_URL}sons/davy-jones-no-finalzinho-vem-um-negocinho.mp3`,
+  emoji: "🍷",
+  descricao: "A gente fingindo entender de vinho enquanto inventa palavras para descrever o gosto.",
+  historia:
+    "A proposta era degustar vinhos como duas pessoas sofisticadas, daquelas que giram a taça, sentem o aroma e dizem coisas como 'notas amadeiradas'. Na prática, a gente provavelmente ia gostar de um, fazer cara de entendido para outro e inventar uma descrição completamente sem sentido para o terceiro. Entre uma taça e outra, as conversas ficariam mais interessantes, as risadas mais fáceis e o tempo passaria sem a gente perceber. E, se alguém perguntasse qual era o nosso vinho favorito, a resposta seria simples: aquele que veio acompanhado da sua companhia. 🍇❤️",
+  },
+  {
     nome: "Terapia",
-    som: `${import.meta.env.BASE_URL}sons/ta-bom-quanto-sentimento.mp3`,
+    som: [
+      `${import.meta.env.BASE_URL}sons/ta-bom-quanto-sentimento.mp3`,
+      `${import.meta.env.BASE_URL}sons/zalborghetti-eu-sou-louco.mp3`,
+    ],
     emoji: "🛋️",
     descricao: "Vamos descobrir se o problema é a sociedade ou nós dois.",
     historia:
@@ -144,6 +155,22 @@ const tiposDeDate = [
       "A natureza estava linda, o clima estava perfeito e os mosquitos decidiram participar ativamente do nosso romance. Tentamos manter a pose de casal de comercial de perfume, mas passamos boa parte do tempo espantando insetos. Ainda assim, entre uma reclamação e outra, descobrimos que até no meio do mato a companhia certa consegue transformar qualquer caos em uma boa história.",
   },
   {
+  nome: "Cinema",
+  som: `${import.meta.env.BASE_URL}sons/Marcelo Dourado Que filme ruim - Quando me indica filme ruim.mp3`,
+  emoji: "🍿",
+  descricao: "Pagamos pelo filme, mas o verdadeiro entretenimento é tentar prestar atenção com você do lado.",
+  historia:
+    "A ideia era assistir a um filme, mas ninguém avisou que seria tão difícil prestar atenção na tela com você do lado. Entre dividir a pipoca, roubar um gole do refrigerante e trocar olhares nos momentos errados, provavelmente perdemos algumas cenas importantes. Teve aquela tentativa de ficar em silêncio, interrompida por um comentário sussurrado que fez a gente segurar o riso para não incomodar a sala inteira. No fim, talvez eu nem lembrasse direito como o filme terminava, mas lembraria de cada detalhe de ter você ali comigo. E, sinceramente, se eu pudesse escolher de novo, assistiria até ao mesmo filme mil vezes, desde que fosse com você. 🍿❤️🎬",
+},
+  {
+  nome: "Tattoo",
+  som: `${import.meta.env.BASE_URL}sons/tira-tira-caraio-everson-zoio-meme.mp3`,
+  emoji: "🐉",
+  descricao: "Uma decisão permanente, porque aparentemente gostar de você não era suficiente.",
+  historia:
+    "A ideia era fazer uma tatuagem, mas no fundo eu sabia que a verdadeira loucura era confiar que a gente conseguiria escolher um desenho sem mudar de ideia umas quinze vezes. Entre sugestões duvidosas, opiniões não solicitadas e o medo de sair de lá com algo que precisaria ser explicado pelo resto da vida, a gente transformou uma agulha em um evento histórico. E, no fim, ficou uma marca na pele e mais uma história nossa pra contar. Pelo menos essa não dá pra apagar com um simples Ctrl + Z. 🖤😂",
+},
+  {
     nome: "Dentista",
     som: `${import.meta.env.BASE_URL}sons/lula-cara-sem-dente.mp3`,
     emoji: "🦷",
@@ -159,6 +186,22 @@ const tiposDeDate = [
     historia:
       "Fomos contemplar as maravilhas do parque e refletir sobre um dos maiores mistérios da história brasileira: a grávida de Taubaté. Entre teorias, risadas e uma investigação que não levaria a lugar nenhum, percebemos que nossa capacidade de transformar qualquer passeio em um evento histórico era extraordinária. O romance avançou, a investigação ficou inconclusiva e o relatório final foi arquivado por falta de seriedade.",
   },
+  {
+  nome: "Duolingo",
+  som: `${import.meta.env.BASE_URL}sons/bolsonaro-popcorn-ice-cream.mp3`,
+  emoji: "🦉",
+  descricao: "Aprender um novo idioma juntos, porque passar vergonha em duas línguas é melhor que em uma.",
+  historia:
+    "A ideia era aprender um novo idioma juntos, mas a gente mal conseguia levar as próprias lições a sério. Entre pronúncias duvidosas, respostas erradas e frases que provavelmente fariam um nativo chorar, cada aula virava um motivo novo pra rir. O Duo ficaria orgulhoso da nossa dedicação... ou ameaçaria aparecer na nossa janela se a gente faltasse às lições. 🦉💀 No fim, talvez a gente não ficasse fluente tão cedo, mas teria aprendido uma coisa importante: qualquer atividade fica mais divertida quando é com você. E, se depender de mim, nosso streak vai durar mais que qualquer sequência de estudos. ❤️📚"
+},
+{
+  nome: "Salão de Beleza",
+  som: `${import.meta.env.BASE_URL}sons/wanessa-wolf-cabelo-lindo-e-hidratado.mp3`,
+  emoji: "💅",
+  descricao: "Duas horas de salão, fofocas ilimitadas e uma autoestima que saiu de lá renovada.",
+  historia:
+    "A gente foi ao salão com a missão de dar um trato no visual, mas saiu com muito mais do que cabelo arrumado. Teve conversa sobre tudo, comentários que deveriam ficar restritos àquele ambiente e aquele momento em que você percebe que o salão é praticamente uma central de investigação da vida alheia. Eu só queria acompanhar você, mas acabei descobrindo que até esperar alguém ficar pronta pode ser divertido quando a companhia é a certa. No fim, você saiu ainda mais linda e eu saí pensando que o maior perigo desse date era me acostumar a ter você por perto. 💖✨",
+},
   {
     nome: "Pôr do Sol",
     som: `${import.meta.env.BASE_URL}sons/e-ta-bom.mp3`,
@@ -214,7 +257,14 @@ const tiposDeDate = [
   historia:
     "Chegou a fase em que o maior ato de sedução é perguntar se a pessoa já pagou a conta de luz. O roteiro inclui resolver pendências, fazer orçamento do mês, discutir quem vai lavar a louça e pesquisar por que tudo está tão caro. No meio da burocracia, bateu aquela vontade de abandonar tudo e pedir comida. Mas aí veio o momento mais íntimo de todos: sentar lado a lado, abrir o aplicativo do banco e encarar a realidade sem chorar. No fim, entendemos que crescer é basicamente ter saudade de quando o único problema era escolher o desenho da tarde. E que dividir a vida com alguém é dividir até o PIX do mercado."
 },
-
+{
+  nome: "Igreja",
+  som: `${import.meta.env.BASE_URL}sons/filho-da-fe.mp3`,
+  emoji: "⛪",
+  descricao: "Um momento de paz, fé e a tentativa sincera de não trocar olhares na hora errada.",
+  historia:
+    "Entre orações, reflexões e aquele silêncio que faz a gente prestar atenção no que realmente importa, fomos compartilhar um momento de fé e tranquilidade. Era uma oportunidade de agradecer pelas coisas boas, pedir sabedoria para os caminhos que vêm pela frente e lembrar que algumas conexões merecem ser cuidadas com carinho, respeito e intenção. E, no meio de tudo isso, talvez eu tenha feito uma oração extra: que a vida permita muitos outros momentos ao seu lado. Porque, se tem uma coisa pela qual eu já posso agradecer, é ter encontrado alguém que faz até os dias comuns parecerem especiais. 🙏💕",
+},
 {
   nome: "Na Minha Casa",
   som: `${import.meta.env.BASE_URL}sons/aqui-e-pra-dormir-e-a-tua-casa-aqui.mp3`,
