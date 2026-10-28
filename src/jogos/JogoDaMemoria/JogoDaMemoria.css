@@ -1,0 +1,73 @@
+
+/* JOGO DA MEMÓRIA */
+
+.memoria-jogo {
+  color: #fff;
+  text-align: center;
+  padding: 20px 12px;
+  font-family: Arial, sans-serif;
+}
+
+.memoria-jogo h1 {
+  color: #ff75cf;
+  text-shadow: 0 0 10px #ff43b8, 0 0 24px #9b45ff;
+  font-size: clamp(27px, 5vw, 40px);
+}
+
+.memoria-jogo p {
+  color: #e8d7ff;
+  font-size: 17px;
+}
+
+.memoria-tentativas {
+  color: #ffcf4a !important;
+  font-weight: bold;
+}
+
+.memoria-tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 85px));
+  gap: 10px;
+  justify-content: center;
+  margin: 22px auto;
+}
+
+.memoria-carta {
+  aspect-ratio: 1;
+  border: 2px solid #ff75cf;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #29133d, #170b27);
+  color: #ff75cf;
+  font-size: clamp(25px, 7vw, 38px);
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff43b833;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.memoria-carta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #ff43b877;
+}
+
+.memoria-carta-revelada {
+  background: #fff0fa;
+  color: #25102f;
+}
+
+.memoria-botao {
+  border: 0;
+  border-radius: 25px;
+  padding: 12px 20px;
+  margin: 5px;
+  background: linear-gradient(135deg, #ff43b8, #9b45ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 380px) {
+  .memoria-tabuleiro {
+    grid-template-columns: repeat(4, minmax(0, 65px));
+    gap: 7px;
+  }
+}

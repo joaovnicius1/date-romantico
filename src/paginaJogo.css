@@ -1,0 +1,409 @@
+
+
+
+.pagina-jogo {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at top, #321052 0%, transparent 55%),
+    linear-gradient(135deg, #090510, #16091f 55%, #070713);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.pagina-jogo * {
+  box-sizing: border-box;
+}
+
+.menu-jogos {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 45px 24px 30px;
+}
+
+/* EMOJIS FLUTUANTES */
+
+.fundo-jogos {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.fundo-jogos span {
+  position: absolute;
+  bottom: -80px;
+  font-size: clamp(25px, 4vw, 45px);
+  opacity: 0;
+  filter: drop-shadow(0 0 10px #b700ff);
+  animation: simbolosSubindo 14s linear infinite;
+}
+
+@keyframes simbolosSubindo {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.45;
+  }
+
+  85% {
+    opacity: 0.45;
+  }
+
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* CABEÇALHO */
+
+.cabecalho-jogos {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.subtitulo-jogos {
+  display: block;
+  color: #fff500;
+  font-size: clamp(11px, 2vw, 16px);
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 0 12px #ff9d00;
+}
+
+.titulo-gayman {
+  margin: 18px 0 10px;
+  font-size: clamp(45px, 10vw, 95px);
+  line-height: 1.1;
+  font-weight: 1000;
+  font-style: italic;
+  letter-spacing: -3px;
+  color: #ff32d2;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 15px #ff32d2,
+    0 0 35px #ff00aa,
+    0 0 60px #9900ff;
+  animation: brilhoTitulo 2s ease-in-out infinite alternate;
+}
+
+.titulo-gayman span {
+  color: #8cff00;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 15px #8cff00,
+    0 0 35px #00ff66;
+}
+
+@keyframes brilhoTitulo {
+  from {
+    filter: brightness(0.85);
+  }
+
+  to {
+    filter: brightness(1.25);
+  }
+}
+
+.frase-jogos {
+  color: #00f7ff;
+  font-size: clamp(11px, 2vw, 15px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px #0077ff;
+}
+
+.divisor-neon {
+  margin-top: 28px;
+  color: #ff70d9;
+  font-size: clamp(11px, 2.5vw, 17px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px #ff00c8;
+}
+
+/* GRADE DOS JOGOS */
+
+.grade-jogos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card-jogo {
+  --cor-neon: #ff40d6;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  min-height: 285px;
+  padding: 25px 20px;
+  overflow: hidden;
+  border: 2px solid var(--cor-neon);
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    rgb(32 15 50 / 96%),
+    rgb(10 8 22 / 98%)
+  );
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  box-shadow:
+    0 0 10px color-mix(in srgb, var(--cor-neon), transparent 55%),
+    inset 0 0 18px color-mix(in srgb, var(--cor-neon), transparent 92%);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.card-jogo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 12%),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.card-jogo:hover::before {
+  left: 140%;
+}
+
+.card-jogo:hover {
+  transform: translateY(-7px) scale(1.02);
+  box-shadow:
+    0 0 15px var(--cor-neon),
+    0 0 35px color-mix(in srgb, var(--cor-neon), transparent 55%),
+    inset 0 0 25px color-mix(in srgb, var(--cor-neon), transparent 90%);
+}
+
+.card-jogo:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 5px;
+}
+
+.card-jogo.rosa {
+  --cor-neon: #ff40d6;
+}
+
+.card-jogo.roxo {
+  --cor-neon: #b66bff;
+}
+
+.card-jogo.verde {
+  --cor-neon: #85ff00;
+}
+
+.card-jogo.azul {
+  --cor-neon: #00eaff;
+}
+
+/* CONTEÚDO DOS CARDS */
+
+.etiqueta-jogo {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid var(--cor-neon);
+  border-radius: 20px;
+  color: var(--cor-neon);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.emoji-jogo {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 58px;
+  line-height: 1.2;
+  filter: drop-shadow(0 0 12px var(--cor-neon));
+  transition: transform 0.25s ease;
+}
+
+.card-jogo:hover .emoji-jogo {
+  transform: scale(1.18) rotate(-5deg);
+}
+
+.card-jogo h2 {
+  margin: 5px 0 10px;
+  color: var(--cor-neon);
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 1000;
+  text-shadow: 0 0 12px var(--cor-neon);
+}
+
+.card-jogo p {
+  max-width: 290px;
+  min-height: 38px;
+  margin: 0 0 20px;
+  color: #d8cde8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.botao-jogar {
+  display: inline-block;
+  margin-top: auto;
+  padding: 11px 18px;
+  border: 1px solid var(--cor-neon);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--cor-neon), transparent 88%);
+  color: var(--cor-neon);
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--cor-neon), transparent 65%);
+}
+
+/* RODAPÉ */
+
+.rodape-jogos {
+  margin-top: 35px;
+  text-align: center;
+  color: #e7c7ff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.rodape-jogos span {
+  color: #ff4edb;
+  text-shadow: 0 0 12px #ff00aa;
+}
+
+.rodape-jogos p {
+  color: #a997bd;
+  font-size: 10px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .menu-jogos {
+    padding: 35px 14px 24px;
+  }
+
+  .cabecalho-jogos {
+    margin-bottom: 28px;
+  }
+
+  .titulo-gayman {
+    letter-spacing: -2px;
+  }
+
+  .grade-jogos {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card-jogo {
+    min-height: 260px;
+  }
+
+  .divisor-neon {
+    letter-spacing: 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fundo-jogos span,
+  .titulo-gayman {
+    animation: none;
+  }
+
+  .card-jogo,
+  .emoji-jogo {
+    transition: none;
+  }
+}
+
+
+/* FUNDO PADRÃO DOS JOGOS — ROXO COM CORAÇÕES */
+
+.pagina-jogo-roxa {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at top, #321052 0%, transparent 55%),
+    linear-gradient(135deg, #090510, #16091f 55%, #070713);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina-jogo-roxa,
+.pagina-jogo-roxa * {
+  box-sizing: border-box;
+}
+
+/* CAMADA DOS CORAÇÕES */
+
+.corações-jogo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.corações-jogo span {
+  position: absolute;
+  bottom: -80px;
+  color: #ff69d4;
+  font-size: clamp(20px, 3vw, 38px);
+  opacity: 0;
+  filter: drop-shadow(0 0 10px #b700ff);
+  animation: coracoesSubindo 14s linear infinite;
+}
+
+@keyframes coracoesSubindo {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.55;
+  }
+
+  85% {
+    opacity: 0.55;
+  }
+
+  100% {
+    transform: translateY(-120vh) rotate(360deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .corações-jogo span {
+    animation: none;
+    opacity: 0.25;
+  }
+}
+
+

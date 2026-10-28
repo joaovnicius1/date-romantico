@@ -1,0 +1,87 @@
+
+/* DAMAS */
+
+.damas-jogo {
+  color: #fff;
+  text-align: center;
+  padding: 20px 8px;
+  font-family: Arial, sans-serif;
+}
+
+.damas-jogo h1 {
+  color: #ff75cf;
+  text-shadow: 0 0 10px #ff43b8;
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.damas-jogo p {
+  color: #e8d7ff;
+  font-size: 16px;
+}
+
+.damas-tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  width: min(92vw, 440px);
+  aspect-ratio: 1;
+  margin: 20px auto;
+  border: 3px solid #ff43b8;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #ff43b866;
+}
+
+.damas-casa {
+  min-width: 0;
+  padding: 0;
+  border: 1px solid #32182f;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.damas-casa-clara {
+  background: #f7d9ee;
+}
+
+.damas-casa-escura {
+  background: #57244f;
+}
+
+.damas-casa-selecionada {
+  outline: 3px solid #00f5ff;
+  outline-offset: -3px;
+}
+
+.damas-peca {
+  width: 76%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #241329;
+  box-shadow: inset 0 -4px 0 #0003, 0 2px 5px #0008;
+}
+
+.damas-peca-vermelha {
+  background: radial-gradient(circle at 30% 25%, #ff8585, #ff2929 65%);
+}
+
+.damas-peca-branca {
+  background: radial-gradient(circle at 30% 25%, #fff, #d9d9e5 75%);
+}
+
+.damas-botao {
+  border: 0;
+  border-radius: 25px;
+  padding: 11px 20px;
+  margin: 5px;
+  background: linear-gradient(135deg, #ff43b8, #9b45ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 360px) {
+  .damas-jogo {
+    padding: 12px 3px;
+  }
+}

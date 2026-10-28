@@ -1172,3 +1172,24 @@ button:focus-visible {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+.botao-jogos {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #f5227a;
+  border-radius: 50%;
+  /* mantenha as outras propriedades */
+}
+
+.botao-jogos:hover {
+  transform: scale(1.1);
+  background: #ffd9eb;
+}

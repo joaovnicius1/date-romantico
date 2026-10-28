@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import "./App.css";
 import ContratoDate from "./ContratoDate";
+import PaginaJogo from "./paginaJogo.jsx";
 
 // ============================================
 // PERSONALIZAÇÃO
@@ -564,6 +565,14 @@ function abrirWhatsApp() {
               >
                 CONTINUAR 💌
               </button>
+              <button
+                className="botao-jogos"
+                onClick={() => setEtapa(10)}
+                aria-label="Abrir jogos"
+                title="Nossos joguinhos 🎮"
+              >
+                🎮
+              </button>
             </div>
           )}
         </section>
@@ -1014,6 +1023,9 @@ function abrirWhatsApp() {
             Mal posso esperar. ❤️
           </p>
         </section>
+      )}
+      {etapa === 10 && (
+        <PaginaJogo onEntrarJogos={() => setEtapa(11)} />
       )}
     </main>
   );

@@ -1,0 +1,98 @@
+
+/* COBRINHA */
+
+.cobrinha-jogo {
+  color: #fff;
+  text-align: center;
+  padding: 20px 12px;
+  font-family: Arial, sans-serif;
+}
+
+.cobrinha-jogo h1 {
+  color: #00f5c4;
+  text-shadow: 0 0 10px #00f5c4, 0 0 24px #00a88b;
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.cobrinha-pontuacao {
+  color: #ffcf4a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cobrinha-tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+  width: min(88vw, 420px);
+  aspect-ratio: 1;
+  margin: 20px auto;
+  background: #130d22;
+  border: 3px solid #00f5c4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #00f5c455;
+}
+
+.cobrinha-celula {
+  min-width: 0;
+  border: 1px solid #ffffff08;
+  background: transparent;
+}
+
+.cobrinha-corpo {
+  background: #38cba6;
+  border-radius: 2px;
+}
+
+.cobrinha-cabeca {
+  background: #00f5c4;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00f5c4;
+}
+
+.cobrinha-comida {
+  background: #ffcf4a;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #ffcf4a;
+}
+
+.cobrinha-controles {
+  display: grid;
+  justify-content: center;
+  gap: 5px;
+  margin: 15px auto;
+}
+
+.cobrinha-controles-linha {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cobrinha-botao {
+  min-width: 48px;
+  min-height: 44px;
+  padding: 10px 15px;
+  border: 1px solid #00f5c4;
+  border-radius: 12px;
+  background: #21102f;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cobrinha-botao:hover {
+  background: #174b43;
+  box-shadow: 0 0 12px #00f5c477;
+}
+
+.cobrinha-botao-principal {
+  border: 0;
+  border-radius: 25px;
+  padding: 12px 20px;
+  margin: 5px;
+  background: linear-gradient(135deg, #00cba5, #007e9d);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

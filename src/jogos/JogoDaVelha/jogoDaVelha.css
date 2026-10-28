@@ -1,0 +1,75 @@
+
+/* JOGO DA VELHA */
+
+.jogo-velha {
+  color: #fff;
+  text-align: center;
+  padding: 24px 16px;
+  font-family: Arial, sans-serif;
+}
+
+.jogo-velha h1 {
+  color: #ff75cf;
+  text-shadow: 0 0 8px #ff43b8, 0 0 22px #ff43b8;
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+.jogo-velha p {
+  color: #e8d7ff;
+  font-size: 18px;
+}
+
+.jogo-velha-tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(75px, 100px));
+  gap: 10px;
+  justify-content: center;
+  margin: 26px auto;
+}
+
+.jogo-velha-casa {
+  aspect-ratio: 1;
+  border: 2px solid #ff43b8;
+  border-radius: 16px;
+  background: #21102f;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff43b844;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.jogo-velha-casa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff43b8;
+}
+
+.jogo-velha-botao {
+  border: 0;
+  border-radius: 25px;
+  padding: 12px 22px;
+  margin: 6px;
+  background: linear-gradient(135deg, #421547, #9b45ff);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 12px #ff43b866;
+  transition: transform 0.2s;
+}
+
+.jogo-velha-botao:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 380px) {
+  .jogo-velha-tabuleiro {
+    grid-template-columns: repeat(3, minmax(65px, 85px));
+    gap: 7px;
+  }
+
+  .jogo-velha-casa {
+    font-size: 30px;
+  }
+}
