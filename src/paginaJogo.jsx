@@ -93,7 +93,7 @@ function PaginaJogo() {
           </span>
 
           <h1 className="titulo-gayman">
-            GAYMAN<span>PLAY</span>
+            GAME<span>PLAY</span>
           </h1>
 
           <p className="frase-jogos">
